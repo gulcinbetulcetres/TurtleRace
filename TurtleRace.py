@@ -2,8 +2,8 @@ from turtle import *
 from random import randint
 
 speed(20)
-penup()  # penup ile noktaları sildik.
-goto(-140, 140)  # bu şekilde alttan gelmesini sağladık.
+penup()  
+goto(-140, 140) 
 for step in range(15):
     write(step, align="center")
     right(90)
@@ -46,7 +46,7 @@ re.penup()
 re.goto(-160, 10)
 re.pendown()
 
-for turn in range(100):  # tüm yarıştakilerin ilerleyişi aynı for loopda olmalı.
+for turn in range(100): 
     ada.forward(randint(1, 5))
     bobo.forward(randint(1, 5))
     rasa.forward(randint(1, 5))
